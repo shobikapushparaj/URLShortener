@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const connectDB=require('./db');
+const authRouter = require('./routes/auth');
 const appRouter = require('./routes/approuter');
 
 
@@ -11,6 +12,7 @@ app.use(cors());
 connectDB();
 
 app.use('/', appRouter);
+app.use('/api/auth', authRouter);
 
 const port =5000;
 app.listen(port,()=>{

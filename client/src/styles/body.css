@@ -1,0 +1,65 @@
+.app {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(32, 110, 32);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.nav-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links button {
+  margin-left: 15px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: rgb(23, 176, 23);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-links .logout-btn {
+  background-color: #e53935;
+}
+.nav-links .logout-btn:hover{
+  background-color: #670d0b;
+}
+
+.nav-links button:hover {
+  background-color: rgb(15, 84, 15);
+}
+
+.link-form {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 800px;
+  justify-content: center;
+}
+
+.link-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.link-form button{
+  width: 150px;
+  margin-left: 120px;
+}
+
+.form-div{
+  display: flex;
+  justify-content: center;
+}

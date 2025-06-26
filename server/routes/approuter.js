@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const {createLink, getAllLinks, updateLink,deleteLink,redirectSlug,} = require('../controller/appcontroller');
+
+const {createLink,getAllLinks,updateLink,deleteLink,redirectSlug} = require('../controller/appcontroller');
+
 
 router.post('/api/links', createLink);
 router.get('/api/links', getAllLinks);

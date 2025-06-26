@@ -5,7 +5,9 @@ const linkSchema = new mongoose.Schema({
   originalUrl: String,
   clickCount: { type: Number, default: 0 },
   createdAt: { type: Date, default: Date.now },
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 });
 
 const Link = mongoose.model('Link', linkSchema);
-module.exports=Link;
+
+module.exports = Link;

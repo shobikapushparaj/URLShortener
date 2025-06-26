@@ -1,17 +1,6 @@
-import '../index.css';
+import '../styles/displaylink.css';
 
-const DisplayLinks = ({
-  links,
-  handleDelete,
-  handleEdit,
-  handleSave,
-  handleCancel,
-  editingId,
-  editedUrl,
-  editedSlug,
-  setEditedUrl,
-  setEditedSlug
-}) => {
+const DisplayLinks = ({links,handleDelete,handleEdit,handleSave,handleCancel,editingId,editedUrl,editedSlug,setEditedUrl,setEditedSlug}) => {
   return (
     <div className="display">
       <div style={{ margin: '50px' }}>
@@ -64,7 +53,7 @@ const DisplayLinks = ({
                 <td>
                   {editingId === link._id ? (
                     <>
-                      <button onClick={() => handleSave(link._id)} style={{ backgroundColor: '#305b9b', marginRight:'10px'}}>Save</button>
+                      <button onClick={() => handleSave(link._id)} style={{marginRight:'10px'}}>Save</button>
                       <button onClick={handleCancel} style={{ backgroundColor: 'gray' }}>Cancel</button>
                     </>
                   ) : (
